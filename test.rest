@@ -1,11 +1,19 @@
-DELETE http://localhost:3001/api/persons/1
+DELETE http://localhost:1337/api/persons/63363a2c0a51f58bafe047bd
 
 ###
 
-POST http://localhost:3001/api/persons HTTP/1.1
+POST http://localhost:1337/api/persons
 content-type: application/json
 
 {
-    "name": "John Doe",
-    "number": "12345678910"
+  "name": "12",
+  "phoneNumber": "12312313"
+}
+###
+PUT http://localhost:1337/api/persons/63363a2c0a51f583afe047bd
+content-type: application/json
+
+{
+  "name": "João Pedro",
+  "phoneNumber": ""
 }
